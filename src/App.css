@@ -13,7 +13,7 @@
   --title-color-dark: hsl(var(--hue), var(--sat), 0%);
   --text-color: hsl(var(--hue), var(--sat), 46%);
   --body-color: hsl(var(--hue), var(--sat), 98%);
-  --container-color: #fff;
+  --container-color: rgba(226, 32, 32, 0.801);
 
   /*========== Font and typography ==========*/
   --body-font: "Poppins", sans-serif;
@@ -83,8 +83,7 @@ textarea {
 }
 
 body {
-  background-color: var(--body-color);
-  color: var(--text-color);
+  background-color: red;
 }
 
 h1,
@@ -135,47 +134,35 @@ img {
 }
 
 /*=============== LAYOUT ===============*/
-.container {
+/* .container {
   max-width: 968px;
   margin-left: auto;
   margin-right: auto;
-}
+} */
 
 .grid {
   display: grid;
   gap: 1.5rem;
 }
 
-/*=============== BUTTONS ===============*/
-.button {
-  display: inline-block;
-  background-color: var(--title-color);
-  color: var(--container-color);
-  padding: 1.25rem 2rem;
-  border-radius: 1rem;
-  font-weight: var(--font-medium);
+.bodypage{
+  background: rgba(231, 231, 231, 0.315);
 }
 
-.button:hover {
-  background-color: var(--title-color-dark);
-}
-
-.button__icon {
-  margin-left: var(--mb-0-5);
-}
-
-.button--flex {
-  display: inline-flex;
-  align-items: center;
-}
 
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
 @media screen and (max-width: 992px) {
-  .container {
+  /* .container {
     margin-left: var(--mb-1-5);
     margin-right: var(--mb-1-5);
-  }
+  background-color: var(--container-color);
+
+  } */
+  /* body{
+  background-color: var(--container-color);
+
+  } */
 
   .button {
     padding: 1rem 1.75rem;

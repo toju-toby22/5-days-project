@@ -1,0 +1,196 @@
+.header{
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+    background-color:white;
+    position: fixed;
+
+}
+
+.container{
+    z-index: var(--z-fixed);
+    height: calc(var(--header-height) + 1.5rem);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 1rem;
+    background-color:white;
+    width: 100%;
+
+}
+
+.logo{
+    height: 20px;
+    object-fit: contain;
+   
+    /* width: max-content; */
+}
+
+
+.search_bar{
+    display: flex;
+    align-items: center;
+}
+.searchbar__text{
+    width: 400px;
+    border: none;
+    outline: none;
+}
+.search_button{
+    margin-left: 10px;
+    height: 50px;
+    padding: 0px 20px 0px 20px;
+    background-color: rgb(255,153,0);
+    border-radius: 5px;
+    color: white;
+    box-shadow: rgba(129, 128, 128, 0.877) 0px 5px 5px;
+
+
+}
+
+.search-form{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 500px;
+    border: 1px solid black;
+    padding: 0px 30px 0px 30px;
+}
+
+
+
+.account-cart-help{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: min-content;
+    font-size: 20px;
+    gap: 10px;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+    background-color: antiquewhite;
+    padding: 0px 20px 0px 20px;
+    color: black;
+    text-decoration: none;
+}
+.button_account{
+    border: none;
+    background: none;
+    padding: 0px 10px 0px 10px;
+    outline: none;
+}
+
+.icon-link{
+    margin:0px 10px 0px 10px; 
+    display:flex; 
+    justify-content: space-around;
+    display: none;
+}
+.menu-icon{
+    display: none;
+}
+
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 992px) {
+  
+  }
+  
+  /* For medium devices */
+  @media screen and (max-width: 768px) {
+    body {
+      margin: 0 0 var(--header-height) 0;
+    }
+    .account-cart-help{
+        display: none;
+    }
+    .icon-link{
+        margin:0px 10px 0px 10px; 
+        display:flex; 
+        justify-content: space-around;
+        
+    }
+
+    .search-form{
+        display: flex;
+        align-items: center;
+        height: 40px;
+        width: 300px;
+        border: 1px solid black;
+        padding: 0px 30px 0px 30px;
+    }
+    .searchbar__text{
+        width: 150px;
+        border: none;
+        outline: none;
+        font-size: 0.75rem;
+    }
+
+   
+   
+  }
+  
+  @media screen and (max-width: 576px) {
+
+    .menu-icon{
+        display: block;
+    }
+    .search_bar{
+        display: none;
+    }
+    .search-form{
+        display: flex;
+        align-items: center;
+        height: 40px;
+        width: 200px;
+        border: 1px solid black;
+        padding: 0px 30px 0px 30px;
+    }
+    .searchbar__text{
+        width: 150px;
+        border: none;
+        outline: none;
+        font-size: 0.75rem;
+    }
+    .icon-link{
+        margin:0px 10px 0px 10px; 
+        display:flex; 
+        justify-content: space-around;
+        /* display: block; */
+    }
+    /* .container{
+        height: calc(var(--header-height) + 1.5rem);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 0.75rem;
+        position: fixed;
+    } */
+    
+  }
+  
+  /* For small devices */
+  @media screen and (max-width: 350px) {
+    .account-cart-help{
+        display: none;
+    }
+
+    .icon-link{
+        margin:0px 10px 0px 10px; 
+        display:flex; 
+        justify-content: space-around;
+        display: block;
+    }
+
+  }
+  

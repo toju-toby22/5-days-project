@@ -1,0 +1,169 @@
+.upsection{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(49,49,51);
+    color: white;
+    padding: 20px;
+}
+
+.jumia{
+    height: 50px;
+    object-fit: contain;
+    object-position: center;
+}
+.email_btn{
+    display: flex;
+    align-items: center;
+}
+
+.email-container{
+    height: 50px;
+    background-color: white;
+    width: 300px;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.input_email{
+    height: 20px;
+    width: min-content;
+     border: none;
+    outline: none;
+}
+.btns{
+    height: 50px;
+    width: 80px;
+    text-align: center;
+    /* padding: 20px; */
+    border-radius: 5px;
+    /* border: none; */
+    background: none;
+    color: white;
+    outline: none;
+    border: 1px solid white;
+    margin: 0px 10px ;
+}
+.btns:hover{
+    border: 1px solid rgb(255,153,0);
+    color: rgb(255,153,0);
+    
+}
+.app{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 0px 10px;
+}
+.download{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo{
+    height: 30px;
+}
+
+.apple_play{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.bx{
+    height: 50px;
+}
+.apple{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px;
+    
+}
+
+
+
+
+
+
+
+
+.downsection{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: rgb(83,83,87);
+    color: white;
+    /* align-items: center; */
+    padding-top: 20px;
+}
+
+
+.head{
+    padding-bottom: 30px;
+    font-weight: bold;
+    font-size: large;
+}
+
+
+
+
+@media screen and (max-width: 576px) {
+    .jumia{
+      display: none;
+    }
+
+    .email_btn{
+       flex-direction: column;
+    }
+    .input_email{
+        height: 20px;
+        width: min-content;
+         border: none;
+        outline: none;
+    }
+
+    /* .email-container{
+        height: 50px;
+        background-color: white;
+        width: 100px;
+        border-radius: 5px;
+        padding: 10px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+    } */
+
+    .upsection{
+        display: none;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: space-around;
+        /* align-items: center; */
+        background-color: rgb(49,49,51);
+        color: white;
+        padding: 20px;
+    }
+
+    .downsection{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        background-color: rgb(83,83,87);
+        color: white;
+        width: 100%;
+        /* align-items: center; */
+        padding-top: 20px;
+    }
+}
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+    .side-bar{
+        display: none;
+    }
+
+}
