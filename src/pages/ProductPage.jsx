@@ -3,6 +3,8 @@ import Footer from '../components/footer/Footer'
 import Navbar from '../components/navbar/Navbar'
 import "./css/ProductPage.css"
 import ProductImage from "../Assets/115.jpg"
+import { AiOutlinePlus } from "react-icons/ai";
+import { AiOutlineMinus } from "react-icons/ai";
 
 const ProductPage = () => {
     return (
@@ -15,13 +17,13 @@ const ProductPage = () => {
                 <div className="product-description">
 
                     <div className="productbox">
-                        <div className="product-image">
+                        <div className="product-image-id">
                             <img className='image' src={ProductImage} alt="" />
                         </div>
 
 
 
-                        <div className="description">
+                        <div className="descriptionbox">
                             <div className="first">
                                 <span className='official'>Official Store</span>
                                 <h4>Aveeno Daily Moisturizing Body Lotion 500ml</h4>
@@ -36,9 +38,9 @@ const ProductPage = () => {
                                 <p>+ shipping from ₦ 10,750 to LEKKI-AJAH (SANGOTEDO)</p>
 
                                 <div className="add-reduce">
-                                    <button>-</button>
+                                    <button><AiOutlineMinus /></button>
                                     <p>1</p>
-                                    <button>+</button>
+                                    <button><AiOutlinePlus /></button>
                                     <p>(1 item(s) added)</p>
                                 </div>
                             </div>
@@ -60,8 +62,8 @@ const ProductPage = () => {
                     </div>
 
 
-                    <div className="add-to-cart">
-                        <div className='cart'>
+                    <div className="add-to-cart2">
+                        <div className='cart-delivery'>
                             <div className="deliery">
                                 <h4>DELIVERY & RETURNS</h4>
                             </div>
@@ -98,16 +100,83 @@ const ProductPage = () => {
                             </div>
 
 
-                            <div className='btn'>
-                                <button className='checkbtn'>
-                                    CHECKOUT (₦ 14,850)
-                                </button>
-                            </div>
+
 
 
 
                         </div>
                     </div>
+                </div>
+
+
+
+
+                <div className="product-description">
+
+                    <div className="productbox2">
+                        <div className='details'>
+                            <h4>Product details</h4>
+                        </div>
+
+                        <div className='info-details'>
+                            <p>Intensely nourish dry skin with prebiotic oat formula. T
+                                he gentle daily lotion nourishes &
+                                helps replenish skin's natural moisture barrier &
+                                has clinically proven moisturization that lasts 24 hours.</p>
+                            <ul>
+                                <li>Clinically proven 24 hour moisturization</li>
+                                <li>Daily lotion nourishes dry skin with moisture</li>
+                                <li>Fragrance-free, non-greasy & non-comedogenic Good for Dry skin</li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+
+
+
+
+                    <div>
+                        <div className="add-to-cart2">
+                            <div className='psv'>
+                                <p>Product details</p>
+                            </div>
+
+
+
+                            <div className='psv'>
+                                <p>Specifications</p>
+                            </div>
+
+
+
+                            <div className='psv'>
+                                <p>Verified Customer Feedback</p>
+                            </div>
+
+                        </div>
+
+
+                        <div className="add-to-cart22">
+
+                            <div className='buy'>
+                                <img className='png2' src={ProductImage} alt="" />
+                                <div>
+                                    <p>Aveeno Daily Moisturizing Bo</p>
+                                    <h5>₦ 14,850</h5>
+                                </div>
+                            </div>
+
+                            <div className='btn-cart'>
+                                <button className='cart-btn'>
+                                    ADD TO CART
+                                </button>
+                            </div>
+
+
+                        </div>
+                    </div>
+
                 </div>
             </div>
             <Footer />

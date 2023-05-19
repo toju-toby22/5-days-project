@@ -1,5 +1,5 @@
 // import React from 'react'
-import React, {Component } from 'react';
+import React from 'react';
 
 import Slider from "react-slick";
 import "./slider.css"
@@ -26,21 +26,21 @@ const Sliderbar = () => {
       <div className='slide'>
         <Slider {...settings}>
           <div >
-            <img className='image' src={image1} alt="" />
+            <img className='imagess' src={image1} alt="" />
           </div>
 
           <div >
-          <img className='image' src={image2} alt="" />
-          </div>
-
-
-          <div >
-          <img className='image' src={image3} alt="" />
+          <img className='imagess' src={image2} alt="" />
           </div>
 
 
           <div >
-          <img className='image' src={image4} alt="" />
+          <img className='imagess' src={image3} alt="" />
+          </div>
+
+
+          <div >
+          <img className='imagess' src={image4} alt="" />
           </div>
           
           {/* <div>

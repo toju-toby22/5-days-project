@@ -3,11 +3,11 @@
     /* margin: 0 auto; */
 }
 
-.image {
-    /* width: 100%; */
+.imagess {
+    width: 100%;
     /* background-color: brown; */
     height: 500px;
-    /* object-fit: cover; */
+    object-fit: cover;
     object-position: center;
    
 }
@@ -15,7 +15,7 @@
 
 @media screen and (max-width: 576px) {
 
-    .image{
+    .imagess{
         /* width: 400px; */
         /* box-sizing: content-box; */
         /* background-color: brown; */

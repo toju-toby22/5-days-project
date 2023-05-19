@@ -3,7 +3,7 @@ import Sliderbar from '../../sidebar/Slider'
 import "./slide.css"
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import Products from '../Products';
+import Products1 from './Products1';
 import image1 from "../img/1.jpg"
 import image2 from "../img/14.jpg"
 import image3 from "../img/114.jpg"
@@ -115,13 +115,13 @@ const SlideWidget1 = () => {
                     <h2 className='top'>Top selling</h2>
                 </div>
                 <Carousel responsive={responsive}>
-                  <Link to="/ProductPage"><Products/></Link>
-                  <Products/>
-                  <Products/>
-                  <Products/>
-                  <Products/>
-                  <Products/>
-                  <Products/>
+                  <Link to="/ProductPage"><Products1/></Link>
+                  <Products1/>
+                  <Products1/>
+                  <Products1/>
+                  <Products1/>
+                  <Products1/>
+                  <Products1/>
                 </Carousel>;
             </div>
         </div>

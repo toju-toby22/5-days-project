@@ -4,6 +4,9 @@ import "./css/Cart.css"
 import Footer from '../components/footer/Footer'
 import logo from "./1.jpg"
 import { RiDeleteBin6Line } from "react-icons/ri";
+import pdImage from "../Assets/120.jpg"
+import { AiOutlinePlus } from "react-icons/ai";
+import { AiOutlineMinus } from "react-icons/ai";
 
 
 const Cart = () => {
@@ -31,16 +34,19 @@ const Cart = () => {
             </div>
 
 
-            <div className='cont'>
+            <div className='cart-contain'>
                 <div className='cart-box2'>
-                    <div className='cart-cont'>
+                    <div className='cart-contain2'>
 
-                        <h3>Cart (1)</h3>
+                            <div className='cartNo'>
+                            <h3>Cart (1)</h3>
+
+                            </div>
 
 
-                        <div className='product'>
-                            <div className='product_image'>
-                                <img src="" alt="" />
+                        <div className='products'>
+                            <div className='productimage'>
+                                <img className='pdimage' src={pdImage} alt="" />
                                 <div>
                                     <p>Aveeno Daily Moisturizing Body Lotion 500ml</p>
                                     <span>Seller: Jumia</span>
@@ -60,9 +66,13 @@ const Cart = () => {
                             </div>
 
                             <div className="add-reduce">
-                                <button>-</button>
+                                <button>
+                                    <AiOutlineMinus/>
+                                </button>
                                 <p>1</p>
-                                <button>+</button>
+                                <button>
+                                    <AiOutlinePlus/>
+                                </button>
                             </div>
                         </div>
 

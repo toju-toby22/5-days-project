@@ -7,21 +7,41 @@ import { BiChevronDown } from "react-icons/bi";
 
 import "./navbar.css"
 import { Link } from 'react-router-dom'
+import { CiApple } from "react-icons/ci";
+import { GiLipstick } from "react-icons/gi";
+import { SlScreenSmartphone } from "react-icons/sl";
+import { HiOutlineDesktopComputer } from "react-icons/hi";
+import { RiRadio2Line } from "react-icons/ri";
+// import { IoShirtOutline } from "react-icons/Io";
+import { GiBabyFace } from "react-icons/gi";
+import { GrGamepad } from "react-icons/gr";
+import { CiDumbbell } from "react-icons/ci";
+import { GrCar } from "react-icons/gr";
+import { CgMenuRound } from "react-icons/cg";
+import { GrMenu } from "react-icons/gr";
 
+
+import { useState } from 'react';
+// import Sliderbar from './Slider';
 
 
 const Navbar = () => {
+
+    const [openMenu, setOpenMenu] = useState(false)
     return (
         <div className='header'>
 
             <div className="nav_container">
                 <nav className="container">
-                    <div className='menu-icon'>
-                        <i class='bx bx-menu'></i>
+                    <div className='menu-icon' onClick={() => setOpenMenu((prev) => !prev)}>
+                        <GrMenu/>
                     </div>
-                    <div >
-                        <img className="logo" src={jumialogo} alt="" />
-                    </div>
+
+                    <Link to="/">
+                        <div >
+                            <img className="logo" src={jumialogo} alt="" />
+                        </div>
+                    </Link>
 
 
                     <div className="search_bar">
@@ -35,49 +55,162 @@ const Navbar = () => {
 
                     </div>
 
-                  
+
 
                     <div className='icon-link' >
-                        <i style={{ margin: "0px 10px 0px 10px" }} class='bx bx-user'></i>
-                        <i class='bx bx-cart-alt' ></i>
+                        <AiOutlineUser />
+                        <GrCart />
+
                     </div>
 
                     <div className='account-cart-help'>
 
 
 
-                    
+
+                        <div className="buttons">
+                            <AiOutlineUser />
+                            <div className='button_account'>Account</div>
+                            <BiChevronDown />
+                        </div>
+
+
+
+
+
+                        <div className="buttons">
+                            <FiHelpCircle />
+                            <div className='button_account'>Help</div>
+                            <BiChevronDown />
+                        </div>
+
+
+
+
+                        <Link to="/Cart">
                             <div className="buttons">
-                               <AiOutlineUser/>
-                                <div className='button_account'>Account</div>
-                                <BiChevronDown/>
-                            </div>
-                        
-
-
-
-                    
-                            <div className="buttons">
-                                <FiHelpCircle/>
-                                <div className='button_account'>Help</div>
-                                <BiChevronDown/>
-                            </div>
-                        
-
-
-
-                            <Link to="/Cart">
-                            <div className="buttons">
-                                <GrCart/>
+                                <GrCart />
                                 <div className='button_account'>Cart</div>
                             </div>
-                            </Link>
-                            
-                        
+                        </Link>
+
+
                     </div>
                 </nav>
             </div>
 
+            {
+
+                openMenu && (
+                    <div className='dropdown'>
+                        <div className='side'>
+                            <div className="side-bar">
+
+                                <Link className='cate' to="/Supermarket">
+                                    <ul className="list">
+                                        <li className="section-list">
+                                            <CiApple /> <span>SuperMarket</span>
+                                        </li>
+                                    </ul>
+                                </Link>
+
+
+
+                                <ul className="list">
+                                    <li className="section-list">
+                                        <GiLipstick /> <span>Health & Beauty</span>
+                                    </li>
+                                </ul>
+
+
+
+
+
+                                <ul className="list">
+                                    <li className="section-list">
+                                        <GiLipstick /> <span>Home & Office</span>
+                                    </li>
+                                </ul>
+
+
+
+
+
+                                <ul className="list">
+                                    <li className="section-list">
+                                        <SlScreenSmartphone /> <span>Phones & Tablets</span>
+                                    </li>
+                                </ul>
+
+
+
+
+                                <ul className="list">
+                                    <li className="section-list">
+                                        <HiOutlineDesktopComputer /> <span>Computing</span>
+                                    </li>
+                                </ul>
+
+
+
+
+                                <ul className="list">
+                                    <li className="section-list">
+                                        <RiRadio2Line /> <span>Electronics</span>
+                                    </li>
+                                </ul>
+
+
+                                <ul className="list">
+                                    <li className="section-list">
+                                        <RiRadio2Line /> <span>Fashion</span>
+                                    </li>
+                                </ul>
+
+
+
+                                <ul className="list">
+                                    <li className="section-list">
+                                        <GiBabyFace /> <span>Baby Products</span>
+                                    </li>
+                                </ul>
+
+
+
+                                <ul className="list">
+                                    <li className="section-list">
+                                        <GrGamepad /> <span>Gaming</span>
+                                    </li>
+                                </ul>
+
+
+
+                                <ul className="list">
+                                    <li className="section-list">
+                                        <CiDumbbell /> <span>Sporting Goods</span>
+                                    </li>
+                                </ul>
+
+
+
+                                <ul className="list">
+                                    <li className="section-list">
+                                        <GrCar /> <span>Automobile</span>
+                                    </li>
+                                </ul>
+
+
+
+                                <ul className="list">
+                                    <li className="section-list">
+                                        <CgMenuRound /> <span>Other Categories</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                )
+            }
         </div>
     )
 }

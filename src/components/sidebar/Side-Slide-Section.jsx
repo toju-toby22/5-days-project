@@ -12,21 +12,23 @@ import { GrCar } from "react-icons/gr";
 import { CgMenuRound } from "react-icons/cg";
 import Sliderbar from './Slider';
 import "./side-slide-section.css"
+import { Link } from 'react-router-dom';
 
 const SideSlideSection = () => {
     return (
 
         <div>
-            <div className='cont'>
+            <div className='contnaer'>
                 <div className='side'>
                     <div className="side-bar">
 
+                    <Link className='cate' to="/Supermarket">
                         <ul className="list">
                             <li className="section-list">
                                 <CiApple /> <span>SuperMarket</span>
                             </li>
                         </ul>
-
+                    </Link>
 
 
 

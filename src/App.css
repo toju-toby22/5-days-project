@@ -81,10 +81,10 @@ textarea {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
 }
-
+/* 
 body {
   background-color: red;
-}
+} */
 
 h1,
 h2,
@@ -147,6 +147,9 @@ img {
 
 .bodypage{
   background: rgba(231, 231, 231, 0.315);
+  /* box-sizing: border-box;
+  margin: 0;
+  padding: 0; */
 }
 
 

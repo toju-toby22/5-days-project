@@ -1,12 +1,12 @@
-.cont{
+.contnaer{
     margin-top: 100px;
-   /* padding: 1.5rem; */
+   padding: 1.5rem;
    /* background-color: black; */
    display: flex;
    align-items: center;
    width: 100%;
-   justify-content: space-around;
-   gap: 2px;
+   justify-content: center;
+   gap: 50px;
 }
 .side-bar{
     /* background-color: rgb(255, 255, 255); */
@@ -26,7 +26,7 @@
     display: flex;
     align-items: center;
     width: max-content;
-    /* justify-content: space-around; */
+    justify-content: space-around;
     color: rgb(0, 0, 0);
     font-size: 17px;
     font-weight: 300;
@@ -38,6 +38,9 @@
 }
 .section-list span{
     margin-left: 10px;
+}
+.cate{
+    text-decoration: none;
 }
 
 
